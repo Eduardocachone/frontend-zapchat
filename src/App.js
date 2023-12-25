@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Login from './pages/login/login';
 import Chats from './pages/chats/chats';
-import MeuComponente from './pages/teste/teste';
+
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);
@@ -26,10 +26,6 @@ function App() {
         <Route
           path="/chats"
           element={<Chats userName={userName} userNumber={userNumber} />}
-        />
-        <Route
-          path="/teste"
-          element={<MeuComponente/>}
         />
       </Routes>
     </BrowserRouter>
